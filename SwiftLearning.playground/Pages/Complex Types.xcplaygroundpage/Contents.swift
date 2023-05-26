@@ -68,3 +68,41 @@ let set = Set(["Apple","Orange","Pear"])
 let people = ["Michael","Jim","Pam","Dwight","Creed","Creed"]
 
 // Arrays are most common of 3 types.
+
+
+// Dictionaries
+
+// Collection of values like arrays, but instead of numerical position, items can be
+// accessed using anything you want. Most common way of storing is using strings:
+let ages = [
+    "Michael": 50,
+    "Jim": 30,
+    "Dwight": 40
+]
+
+// Can then access a dictionary using the keys:
+ages["Michael"]
+ages["Jim"]
+
+// Dictionary with type annotation
+let heights: [String: Double] = [
+    "Michael": 1.50,
+    "Jim": 1.68,
+    "Dwight": 1.44
+]
+
+// Default values in dictionaries
+let favouritePizzaPlace = [
+    "Jim": "Pizza By Alfredo's",
+    "Michael": "Alfredo's Pizza"
+]
+
+// To get Jim's favourite pizza place, which returns a value:
+favouritePizzaPlace["Jim"]
+
+// If we try to get Dwight's favourite pizza place we get nil:
+favouritePizzaPlace["Dwight"]
+
+// Try again but set a default value to get that value:
+favouritePizzaPlace["Dwight", default: "Unknown"]
+
