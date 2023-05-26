@@ -106,3 +106,33 @@ favouritePizzaPlace["Dwight"]
 // Try again but set a default value to get that value:
 favouritePizzaPlace["Dwight", default: "Unknown"]
 
+
+// Creating empty collections
+
+// Empty Dictionary with Strings as keys and values
+var dunderMifflinManagers = [String: String]()
+
+// Adding entries
+dunderMifflinManagers["Scrancton"] = "Michael"
+
+// Empty Array
+var results = [Int]()
+
+// Adding entries
+results.append(1)
+
+// Empty Set - Slightly different
+var words = Set<String>()
+var numbers = Set<Int>()
+
+// Adding entries
+words.insert("Hello")
+words.insert("World")
+// This will get ignored
+words.insert("World")
+numbers.insert(1)
+numbers.insert(2)
+
+// Can create empty dictionaries and arrays as below:
+var scores = Dictionary<String, Int>()
+var numberList = Array<Int>()
