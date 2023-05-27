@@ -42,3 +42,24 @@ let fullQuote = partialQuote + "there is no try."
 let array1 = ["Jim", "Dwight"]
 let array2 = ["Michael", "Pam"]
 let combinedArray = array1 + array2
+
+
+// Compound Operators
+
+// These are shorthand operators that combine an operator with assignment,
+// changing a variable in place.
+
+// For example you were 21 but you had a birthday, you could write:
+var age = 21
+age += 1
+
+// For subtraction
+age -= 1
+// Multiplication
+age *= 2
+// Division
+age /= 2
+
+// This also works with strings
+var iAmYour = "No, I am your "
+iAmYour += "father"
