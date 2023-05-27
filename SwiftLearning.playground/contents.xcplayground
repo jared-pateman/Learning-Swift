@@ -3,5 +3,6 @@
     <pages>
         <page name='Simple Types'/>
         <page name='Complex Types'/>
+        <page name='Operators and Conditions'/>
     </pages>
 </playground>
