@@ -21,3 +21,24 @@ let dividedResult = secondValue / firstValue
 // Modulus/Remainder
 let thirdValue = 4
 let remainder = secondValue % thirdValue
+
+
+// Operator Overloading
+
+// This is a fancy way of saying that an operators functionality
+// changes depending on the values used. And you cannot mix types
+// as Swift is type-safe
+
+// For sums
+let twentyFive = 25
+let fifty = 25 + 25
+
+// For string concatination
+let partialQuote = "Do or do not "
+let fullQuote = partialQuote + "there is no try."
+
+
+// For joining arrays
+let array1 = ["Jim", "Dwight"]
+let array2 = ["Michael", "Pam"]
+let combinedArray = array1 + array2
