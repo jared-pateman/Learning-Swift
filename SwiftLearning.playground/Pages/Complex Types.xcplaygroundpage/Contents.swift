@@ -136,3 +136,70 @@ numbers.insert(2)
 // Can create empty dictionaries and arrays as below:
 var scores = Dictionary<String, Int>()
 var numberList = Array<Int>()
+
+
+// Enumerations (enums)
+
+// A way of defining groups of related values in a way that makes them easier to use.
+
+// Example: could have multiple vars for win, loss and draw
+let resultWin = "win"
+let resultLoss = "loss"
+let resultDraw = "draw"
+
+// Instead can use an enum
+enum Result {
+    case win
+    case loss
+    case draw
+}
+
+// Set value as:
+let result = Result.win
+
+// Associated Values in Enums
+
+// This is a way of attaching more info to an enum.
+
+// e.g. enum storing activities:
+enum Activity {
+    case studying
+    case exercising
+    case gaming
+}
+
+// Above we would know someone is studying but not what they're studying. Add values:
+enum Activity2 {
+    case studying(topic: String)
+    case exercising(exercise: String)
+    case gaming(game: String)
+}
+
+// Now can be precise and say someone is studying Swift:
+let studying = Activity2.studying(topic: "Swift")
+
+// Raw Values in enums
+
+// Sometimes want to assign values so they have meaning.
+// Example planet enum storing ints for each case:
+enum Planets: Int {
+    case mercury
+    case venus
+    case earth
+    case mars
+}
+
+// Raw values are automatically assigned from 0. So earth = 2. Which makes no sense.
+let earth = Planets(rawValue: 2)
+
+// If you want, can assign one or more case a specific value, Swift will do the rest.
+// To make this more like we expect:
+enum Planets2: Int {
+    case mercury = 1
+    case venus
+    case earth
+    case mars
+}
+
+// Swift will now assign 1 to mercury, 2 to venus etc. Making earth = 3 which we would expect.
+let earthAgain = Planets2(rawValue: 3)
