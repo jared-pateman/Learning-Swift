@@ -4,5 +4,6 @@
         <page name='Simple Types'/>
         <page name='Complex Types'/>
         <page name='Operators and Conditions'/>
+        <page name='Looping'/>
     </pages>
 </playground>
