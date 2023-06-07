@@ -94,3 +94,31 @@ firstValue <= secondValue
 "abc" >= "bcd"
 
 
+// Conditions
+
+// Now we have used operators we can write conditions using if statements.
+
+// An example we can use is blackjack:
+let firstCard = 11
+let secondCard = 10
+if firstCard + secondCard == 21 {
+    print("Blackjack!")
+}
+
+// Code inside the { } will be printed if the condition is true.
+// Can provide alternative code to run if condition is false with 'else'
+if firstCard + secondCard == 21 {
+    print("Blackjack!")
+} else {
+    print("Not Blackjack!")
+}
+
+
+// Can also chain conditions together using 'else if'
+if firstCard + secondCard == 2 {
+    print("Wow 2 Aces!")
+} else if firstCard + secondCard == 21 {
+    print("Blackjack!")
+} else {
+    print("Not Blackjack nor 2 Aces!")
+}
