@@ -204,3 +204,29 @@ case "Tuesday":
 default:
     print("It is not Monday or Tuesday!")
 }
+
+
+// Range Operators
+
+// In Swift there are 2 ways of making ranges:
+// '..<' and '...'. '..<' creates a range up to but
+// excluding the final value, and '...' creates ranges up to
+// and including the final value. Example: 1..<5 contains 1-4, but
+// 1...5 contains the numbers 1-5.. Ranges are helpful with switch statements
+// as they can be used within cases. Example is grade ranges:
+let mark = 85
+
+switch mark {
+case 0..<35:
+    print("Fail")
+case 35..<40:
+    print("Marginal Fail")
+case 40..<50:
+    print("Third")
+case 50..<60:
+    print("2:2")
+case 60..<70:
+    print("2:1")
+default:
+    print("1st Go you!")
+}
