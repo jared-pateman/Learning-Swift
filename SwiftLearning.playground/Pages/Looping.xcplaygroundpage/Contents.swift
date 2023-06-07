@@ -134,3 +134,22 @@ for i in 1...10 {
     }
     print("\(i) is even!")
 }
+
+
+// Infinite Loops
+
+// It is common to use while loops to make infinite loops,
+// loops that never end or only end when ready. All apps on iPhone
+// use infinite loops, because they start running, then continually watch
+// for events until you choose to quite them. To make an infinite loop we can use
+// true as the condition because true is always true, so the loop will continue running.
+// Example of an infinite loop that exits once we've gone around 50 times:
+var counter = 0
+while true {
+    print("")
+    counter += 1
+    // if we didn't do this we would never exit the loop
+    if counter == 50 {
+        break
+    }
+}
