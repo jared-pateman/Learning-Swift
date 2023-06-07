@@ -42,3 +42,29 @@ while currentNumber <= 20 {
     currentNumber += 1
 }
 print("Finished counting to 20!")
+
+
+// Repeat Loops
+
+// Repeat loops not commonly used, but is simple to learn.
+// Identical to a while loop but condition check is at the end.
+// Could rewrite counting to be this:
+var number = 1
+repeat {
+    print(number)
+    number += 1
+} while number <= 20
+print("Finished counting to 20!")
+
+// Because the condition comes at the end of the repeat loop, the code will be
+// executed at least once, whereas while loops check conditon before first run.
+// for example this print will never run because false is always false. We even
+// get a warning in Xcode to say the print will never be executed.
+while false {
+    print("This is false.")
+}
+
+// However with repeat the print will run once then we exit the loop after one run:
+repeat {
+    print("This is false.")
+} while false
