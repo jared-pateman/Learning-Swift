@@ -68,3 +68,26 @@ while false {
 repeat {
     print("This is false.")
 } while false
+
+
+// Exiting Loops
+
+// Can exit a loop at any time using 'break'. Example:
+// Here we will finish the loop.
+var countDown = 10
+while countDown >= 0 {
+    print(countDown)
+    countDown -= 1
+}
+print("Finished counting down!")
+
+// Here we exit when we're at 5 and we don't finish counting down:
+countDown = 10
+while countDown >= 0 {
+    print(countDown)
+    if countDown == 5 {
+        print("Yawn, counting down is boring")
+        break
+    }
+    countDown -= 1
+}
