@@ -163,3 +163,44 @@ if firstCard == secondCard {
 } else {
     print("Cards do not match")
 }
+
+
+// Switch Statements
+
+// If using several conditions within if/else if/else it can often
+// be clearer to use a switch statement. This lets you write your condition
+// once, then list all possible outcomes and what should happen in each case.
+
+// Example:
+let currentDay = "Monday"
+
+// Can use switch statement to print one of 6 messages:
+switch currentDay {
+case "Monday":
+    print("It is Monday!")
+case "Tuesday":
+    print("It is Tuesday!")
+case "Wednesday":
+    print("It is Wednesday!")
+case "Thursday":
+    print("It is Thursday!")
+case "Friday":
+    print("It is Friday!")
+// Default runs if one of the above cases is not met.
+default:
+    print("It's the weekend, Party time!")
+}
+
+
+// Swift will only run the code inside each case. If you want
+// execution to continue onto the next case, use the 'fallthrough' keyword.
+// In below example "It is Monday!" and "It is Tuesday" will be printed.
+switch currentDay {
+case "Monday":
+    print("It is Monday!")
+    fallthrough
+case "Tuesday":
+    print("It is Tuesday!")
+default:
+    print("It is not Monday or Tuesday!")
+}
