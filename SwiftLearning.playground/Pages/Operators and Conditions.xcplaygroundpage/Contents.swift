@@ -63,3 +63,34 @@ age /= 2
 // This also works with strings
 var iAmYour = "No, I am your "
 iAmYour += "father"
+
+
+// Comparison Operators
+
+// Operators to check for equality - return Bools
+
+// == Checking whether 2 values are the same
+firstValue == secondValue
+
+// != Checking whether 2 values are not the same
+firstValue != secondValue
+
+
+// There are four operators for comparing whether values are
+// greater/less than or greater/less/equal to.
+// Greater than
+firstValue > secondValue
+// Greater than or equal to
+firstValue >= secondValue
+// Less than
+firstValue < secondValue
+// Less than or equal to
+firstValue <= secondValue
+
+// These also work with strings, because strings
+// have a natural alphabetical order.
+// Note: When comparing booleans, can write if boolean to mean if boolean == true
+"abc" <= "bcd"
+"abc" >= "bcd"
+
+
