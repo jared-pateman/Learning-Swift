@@ -144,3 +144,22 @@ if score1 >= 100 || score2 >= 100 {
 } else {
     print("No scores are 100 or higher!")
 }
+
+
+// Ternary Operator
+
+// Ternary operator is a rarely used operator. Works with 3 values at once
+// hence ternary, it checks a condition specified in the first value, and if it's
+// true returns the second, but if false returns the third value. Ternary is a condition
+// plus true or false blocks all in one, split by a '?' and a ':'. This is hard to read.
+// Example:
+let card1 = 11
+let card2 = 10
+print(firstCard == secondCard ? "Cards match" : "Cards do not match")
+
+// The above is the equivalent of writing:
+if firstCard == secondCard {
+    print("Cards match")
+} else {
+    print("Cards do not match")
+}
