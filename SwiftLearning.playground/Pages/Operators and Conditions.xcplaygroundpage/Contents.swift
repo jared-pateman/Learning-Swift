@@ -122,3 +122,25 @@ if firstCard + secondCard == 2 {
 } else {
     print("Not Blackjack nor 2 Aces!")
 }
+
+
+// Chaining Conditions
+
+// We can combine conditions in swift with special operators:
+// && (meaning 'and') and || (meaning 'or'). Using this we can check
+// if 2 values both match our conditions:
+let score1 = 100
+let score2 = 50
+if score1 >= 100 && score2 >= 100 {
+    print("Both scores 100 or higher!")
+} else {
+    print("Both scores not 100 or higher!")
+}
+
+
+// or we can check if at least one of our values matches our conditions:
+if score1 >= 100 || score2 >= 100 {
+    print("At least one score is 100 or higher!")
+} else {
+    print("No scores are 100 or higher!")
+}
