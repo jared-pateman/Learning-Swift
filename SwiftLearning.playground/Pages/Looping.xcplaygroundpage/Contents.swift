@@ -120,3 +120,17 @@ countToFive: for i in 1...5 {
         }
     }
 }
+
+
+// Skipping Items
+
+// Skipping items is like the break statement but instead of leaving
+// the loop entirely we move onto the next iteration.
+
+// Example print only even numbers:
+for i in 1...10 {
+    if i % 2 == 1 {
+        continue
+    }
+    print("\(i) is even!")
+}
