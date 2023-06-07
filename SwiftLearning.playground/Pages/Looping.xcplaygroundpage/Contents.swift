@@ -29,3 +29,16 @@ for city in englishCities {
 for _ in 1...5 {
     print("Hello, World!")
 }
+
+
+// While Loops
+
+// While loops will go around and around until a condition fails.
+// Example is to simulate a child counting to 20, then after 20 printing
+// Finished counting to 20:
+var currentNumber = 1
+while currentNumber <= 20 {
+    print(currentNumber)
+    currentNumber += 1
+}
+print("Finished counting to 20!")
