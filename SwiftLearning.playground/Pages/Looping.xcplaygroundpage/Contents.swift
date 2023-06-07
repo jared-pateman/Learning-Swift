@@ -91,3 +91,32 @@ while countDown >= 0 {
     }
     countDown -= 1
 }
+
+
+// Exiting Multiple Loops
+
+// If you nest loops, you might want to break out of both loops at the same time.
+// An exmaple is writing some code to print the times tables from 1 to 5:
+// A full loop would be:
+for i in 1...5 {
+    for j in 1...10 {
+        var result = i * j
+        print("\(i) * \(j) = \(result)")
+    }
+}
+
+// If we wanted to exit part way through this loop we need to do 2 things:
+// give the outer loop a label
+// use break with the outer loop's label.
+// With a regular break we would exit only the inner loop.
+// Below will break out of both loops at the same time:
+countToFive: for i in 1...5 {
+    for j in 1...10 {
+        var product = i * j
+        print("\(i) * \(j) = \(product)")
+        if product == 25 {
+            print("Hurray 5 squared = \(product)")
+            break countToFive
+        }
+    }
+}
