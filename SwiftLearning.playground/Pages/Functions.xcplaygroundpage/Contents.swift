@@ -74,3 +74,20 @@ func sayHello(to name: String) {
 
 sayHello(to: "John")
 
+
+// Omitting Parameter Labels
+
+// If you don't want to specify the parameter name when calling a function
+// you can stop Swift from looking for it by using an underscore "_", as the external
+// parameter name, then you can call the function without specifying that parameter.
+// This makes code more naturally readable but it's generally better practice to give
+// parameters external names to avoid confusion.
+
+// Example:
+func printHelloTo(_ receipient: String) {
+    print("Hello \(receipient)!")
+}
+
+// Now we can call printHelloTo like this:
+printHelloTo("Jane")
+
