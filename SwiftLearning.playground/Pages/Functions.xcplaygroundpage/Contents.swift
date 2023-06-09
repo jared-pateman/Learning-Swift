@@ -130,3 +130,51 @@ func greet(names: String...) {
 
 // Now we can call greet with lots of names:
 greet(names: "Pam", "Jim", "Dwight", "Michael")
+
+
+// Writing & Running Throwing Functions
+
+// Sometimes a function may fail because of bad input or bad internal code.
+// Swift lets us throw errors from functions by marking them as "throws" before
+// their return type, then using "throw" when something goes wrong.
+
+
+// To demonstrate we can define an enum that describes the types of errors we can throw.
+// These must always be based on Swift's existing Error type. The below example is a function
+// that checks whether someones porridge is too hot, too cold or just right, so that we throw an
+// error if the porridge isn't just right.
+
+enum WrongPorridge: Error {
+    case tooHot
+    case tooCold
+}
+
+func checkPorridge(temperature: Int) throws -> String {
+    if temperature >= 50 {
+        throw WrongPorridge.tooHot
+    } else if temperature <= 30 {
+        throw WrongPorridge.tooCold
+    }
+    return("Ah... Just Right")
+}
+
+
+// To now run this function we have to use different keywords: "do"; which
+// starts a section of code that may cause problems, "try"; is used before every function
+// that might throw an error, and "catch" which lets you handle errors. If errors happen inside
+// the do block, execution immediately jumps to the catch block. So to call checkPorridge with a
+// parameter that throws one of the errors we would do:
+do {
+    let porridge = try checkPorridge(temperature: 100)
+    print(porridge)
+} catch {
+    print("That porridge isn't right!")
+}
+
+// Then we can try again with a good value:
+do {
+    let porridge = try checkPorridge(temperature: 40)
+    print(porridge)
+} catch {
+    print("That porridge isn't right!")
+}
