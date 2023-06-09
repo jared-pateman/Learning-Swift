@@ -5,5 +5,6 @@
         <page name='Complex Types'/>
         <page name='Operators and Conditions'/>
         <page name='Looping'/>
+        <page name='Functions'/>
     </pages>
 </playground>

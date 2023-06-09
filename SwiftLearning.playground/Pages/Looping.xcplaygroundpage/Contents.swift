@@ -1,4 +1,4 @@
-// Operators and Conditions
+// Looping
 import UIKit
 
 // There are multiple ways to write loops, underlying mechanism
