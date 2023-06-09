@@ -42,3 +42,21 @@ func multiplyNumbers(number1: Int, number2: Int) {
 // We can now call this function like so:
 multiplyNumbers(number1: 5, number2: 3)
 
+
+// Returning Values
+
+// As well as passing values into a function, they can also be sent back.
+// To do this you write "->" followed by the type of the value that is being returned.
+// Then inside the function use "return" to send the value back if there is one, at this
+// point the function exits and sends back the value, no more of the function code will run.
+// If multiple values are wanted to be returned a tuple would be the perfect option.
+
+// Example:
+func squareNumber(number: Int) -> Int {
+    return number * number
+}
+
+// Using this function we can assign the returned value to a variable/constant:
+let result = squareNumber(number: 5)
+print(result)
+
