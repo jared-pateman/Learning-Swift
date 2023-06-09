@@ -60,3 +60,17 @@ func squareNumber(number: Int) -> Int {
 let result = squareNumber(number: 5)
 print(result)
 
+
+// Parameter Labels
+
+// In swift 2 names can be provided for a parameter to a function. One is used externally
+// to the function (when the function is called) and one is used internally (inside the function)
+// It is as simple as writing 2 names when specifying a parameter and having them separated by a space.
+
+// Example:
+func sayHello(to name: String) {
+    print("Hello, \(name)")
+}
+
+sayHello(to: "John")
+
