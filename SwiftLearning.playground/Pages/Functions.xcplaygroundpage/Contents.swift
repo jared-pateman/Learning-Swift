@@ -108,3 +108,25 @@ func multiplyValues(_ value1: Int, value2: Int = 10) {
 multiplyValues(5)
 // This will multiply 5 by 5.
 multiplyValues(5, value2: 5)
+
+
+// Variadic Functions
+
+// Variadic functions is a fancy way of saying functions that accept any number of
+// parameters of the same type. "print()" is variadic, if lots of parameters are passed
+// they are all printed on one line with spaces between them:
+print("This","is","fun")
+
+// To create a variadic parameter write "..." after the paramter type.
+// Then inside the function Swift will convert the values passed into the function
+// into an array, that way it can be looped over if needed.
+
+// Example:
+func greet(names: String...) {
+    for name in names {
+        print("Greetings, \(name)")
+    }
+}
+
+// Now we can call greet with lots of names:
+greet(names: "Pam", "Jim", "Dwight", "Michael")
