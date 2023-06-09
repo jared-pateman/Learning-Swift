@@ -22,3 +22,23 @@ topics within the Swift language
 
 // Now we have written our function we can call it:
 printWelcomeMessage()
+
+
+// Accepting Parameters
+
+// Functions are a lot more useful when they can be changed
+// each time we want to run the,. We can do this by passing a
+// parameter.
+
+// To do this we must specify the name of the parameter followed
+// by ':' and then the type of the parameter. All of this goes inside
+// the brackets '()'
+
+// Example:
+func multiplyNumbers(number1: Int, number2: Int) {
+    print(number1 * number2)
+}
+
+// We can now call this function like so:
+multiplyNumbers(number1: 5, number2: 3)
+
