@@ -91,3 +91,20 @@ func printHelloTo(_ receipient: String) {
 // Now we can call printHelloTo like this:
 printHelloTo("Jane")
 
+
+// Default Parameters
+
+// You can give parameters to functions a default value by writing "=" after its type
+// followed by the default value you want to give the parameter. That way you can call a function
+// in 2 ways.
+
+// Example:
+func multiplyValues(_ value1: Int, value2: Int = 10) {
+    print(value1 * value2)
+}
+
+// In the above example we can call the function in 2 ways:
+// This will multiply 5 by 10.
+multiplyValues(5)
+// This will multiply 5 by 5.
+multiplyValues(5, value2: 5)
