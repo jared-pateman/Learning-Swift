@@ -178,3 +178,24 @@ do {
 } catch {
     print("That porridge isn't right!")
 }
+
+
+// Inout Parameters
+
+// Parameters passed into Swift functions ae constants, so they can't be changed.
+// If you want, one or more parameter can be passed in as inout parameters, which means
+// they can be changed inside the function, and those changes will impact the value outside
+// the function. For example, if you want to double a number in place (Change the value, rather
+// than return a new one) you can do:
+func doubleNumberInPlace(number: inout Int) {
+    number *= 2
+}
+
+// To now use this function we need an integer variable (can't use constants as they may get
+// changed) and we need to pass this variable as a parameter with an "&" before the variable
+// name, which tells Swift you're aware it is being used as an inout.
+
+// Example:
+var myNum = 5
+doubleNumberInPlace(number: &myNum)
+print(myNum)
