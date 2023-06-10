@@ -60,7 +60,7 @@ var pi = 3.141
 
 // Booleans
 
-// Like other languages, hold either true or false. Swift auto assings boolean type
+// Like other languages, hold either true or false. Swift auto assigns boolean type
 // to variable assigned true or false as it's value.
 var trueBool = true
 var falseBool = false
