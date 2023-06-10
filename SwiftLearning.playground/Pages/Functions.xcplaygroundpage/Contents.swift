@@ -27,7 +27,7 @@ printWelcomeMessage()
 // Accepting Parameters
 
 // Functions are a lot more useful when they can be changed
-// each time we want to run the,. We can do this by passing a
+// each time we want to run them. We can do this by passing a
 // parameter.
 
 // To do this we must specify the name of the parameter followed
@@ -182,7 +182,7 @@ do {
 
 // Inout Parameters
 
-// Parameters passed into Swift functions ae constants, so they can't be changed.
+// Parameters passed into Swift functions are constants, so they can't be changed.
 // If you want, one or more parameter can be passed in as inout parameters, which means
 // they can be changed inside the function, and those changes will impact the value outside
 // the function. For example, if you want to double a number in place (Change the value, rather
