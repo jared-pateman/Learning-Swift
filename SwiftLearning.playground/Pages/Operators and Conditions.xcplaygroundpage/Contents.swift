@@ -77,7 +77,7 @@ firstValue != secondValue
 
 
 // There are four operators for comparing whether values are
-// greater/less than or greater/less/equal to.
+// greater/less than or greater/less or equal to.
 // Greater than
 firstValue > secondValue
 // Greater than or equal to
@@ -212,7 +212,7 @@ default:
 // '..<' and '...'. '..<' creates a range up to but
 // excluding the final value, and '...' creates ranges up to
 // and including the final value. Example: 1..<5 contains 1-4, but
-// 1...5 contains the numbers 1-5.. Ranges are helpful with switch statements
+// 1...5 contains the numbers 1-5. Ranges are helpful with switch statements
 // as they can be used within cases. Example is grade ranges:
 let mark = 85
 
